@@ -1,0 +1,54 @@
+{
+  "saga_engine": {
+    "idempotent": true,
+    "orders": 500,
+    "seed": 42,
+    "outcomes": {
+      "compensated": 137,
+      "completed": 357,
+      "stuck": 6
+    },
+    "faults_injected": {
+      "crash_after": 84,
+      "crash_before": 78,
+      "duplicate_delivery": 87,
+      "transient": 93,
+      "transient_x5": 77,
+      "none": 81
+    },
+    "duplicate_charges": 0,
+    "duplicate_confirmation_emails": 0,
+    "duplicate_refund_notices": 0,
+    "silent_wrong_net_charge": 0,
+    "orphan_reservations": 0,
+    "stuck_runs_flagged_for_operator": 6,
+    "stuck_runs_with_charge_outstanding": 2,
+    "stuck_runs_with_reservation_held": 6
+  },
+  "naive_baseline": {
+    "idempotent": false,
+    "orders": 500,
+    "seed": 42,
+    "outcomes": {
+      "compensated": 137,
+      "completed": 357,
+      "stuck": 6
+    },
+    "faults_injected": {
+      "crash_after": 84,
+      "crash_before": 78,
+      "duplicate_delivery": 87,
+      "transient": 93,
+      "transient_x5": 77,
+      "none": 81
+    },
+    "duplicate_charges": 11,
+    "duplicate_confirmation_emails": 16,
+    "duplicate_refund_notices": 0,
+    "silent_wrong_net_charge": 14,
+    "orphan_reservations": 13,
+    "stuck_runs_flagged_for_operator": 6,
+    "stuck_runs_with_charge_outstanding": 2,
+    "stuck_runs_with_reservation_held": 6
+  }
+}
